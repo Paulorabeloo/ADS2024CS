@@ -1,0 +1,8 @@
+Caixa de correio não disponível. A resposta do servidor foi: Access denied - Invalid HELO name (See RFC2821 4.1.1.1)Caixa de correio não disponível. A resposta do servidor foi: Access denied - Invalid HELO name (See RFC2821 4.1.1.1)Falha ao enviar email.
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em Projeto03.FaleConosco.Enviar_Click(Object sender, EventArgs e) na C:\Users\0040482311045\Documents\ADS2024CS\Projeto03\FaleConosco.aspx.cs:linha 67
+----------------------------------------
+Falha ao enviar email.
+   em System.Net.Mail.SmtpClient.Send(MailMessage message)
+   em Projeto03.FaleConosco.Enviar_Click(Object sender, EventArgs e) na C:\Users\0040482311045\Documents\ADS2024CS\Projeto03\FaleConosco.aspx.cs:linha 67
+----------------------------------------

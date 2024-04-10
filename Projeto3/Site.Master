@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Projeto3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- StyleSheet.css contém classes´para diversos estilos -->
+    <link href="CSS_Javascript/StyleSheet.css" rel="stylesheet" />
+    <!--Projeto.css contém as classes para estruturar a master page -->
+    <link href="CSS_Javascript/Projeto.css" rel="stylesheet" />
+    <!-- Rescursos para exibir slides -->
+    <link href="CSS_Javascript/flexslider.css" rel="stylesheet" />
+    <!-- PRIMEIRO ESTA BIBLIOTECA -->
+    <script src="CSS_Javascript/jquery-1.7.2.min.js"></script>
+    <script src="CSS_Javascript/flexslider.min.js"></script>
+    <!--
+
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+        <!--Cabeçalho-->
+        <div class="cabecalho content-wrap">
+             <!-- LOGOMARCA -->
+            <div class="logomarca">
+                <img src="Images/marca1.png" />
+            </div>
+            <!-- BARRA TÌTULO -->
+            <div class="barra-titulo">
+                Analise e Desenvolvimento de Sistemas
+            </div>
+            <!-- BARRA DO MENU -->
+            <div class="barra-menu">
+                <a href="Default.aspx">Home</a>
+                <a href="Sobre.aspx">Sobre</a>
+                <a href="Cadastro.aspx">Cadastro</a>
+            </div>
+        </div>
+        <!-- Conteúdo-->
+        <div class="conteudo content-wrap">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Rodapé-->
+        <div class="rodape">
+         <div class="content-wrap">
+
+            Programação em Linguagem C#
+         </div>
+        </div>
+    </form>
+</body>
+</html>

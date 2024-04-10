@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Projeto03.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- StyleSheet.css contem classes para diversos estilos -->
+    <link href="css_javascript/StyleSheet.css" rel="stylesheet" />
+
+    <!--Projeto.css contem as classes para estruturar a master page -->
+    <link href="css_javascript/Projeto.css" rel="stylesheet" />
+    <!-- Recursos Para exibir slides -->
+    <link href="css_javascript/flexslider.css" rel="stylesheet" />
+    <!-- Primeiro esta Biblioteca -->
+    <script src="css_javascript/jquery-1.7.2.min.js"></script>
+    
+    <script src="css_javascript/flexslider.min.js"></script>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Cabeçalho -->
+        <div class="cabecalho content-wrap">
+            <!-- Logomarca-->
+            <div class="logomarca">
+                <img src="imagens/marca1.png" />
+            </div>
+            <!-- Barra do Titulo -->
+            <div class="barra-titulo">
+                Analise e Dsenvolvimento de Sistemas
+            </div>
+            <!-- Barra do Menu -->
+            <div class="barra-menu">
+                <a href="Default.aspx">HOME</a>
+                <a href="Sobre.aspx">SOBRE</a>
+                <a href="Cadastro.aspx">CADASTRO</a>
+                <a href="FaleConosco.aspx">FALE CONOSCO</a>
+            </div>
+
+        </div>
+
+        <!-- Conteudo -->
+        <div class="conteudo content-wrap">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Rodape -->
+        <div class="rodape">
+            <div class="content-wrap">
+                Progamação em Linguaguem C#
+            </div>
+        </div>
+    </form>
+</body>
+</html>
